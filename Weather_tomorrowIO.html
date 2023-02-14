@@ -1,0 +1,99 @@
+<!DOCTYPE Html>
+<Html Lang="En">
+
+<Head>
+    <Meta Charset="UTF-8">
+    <Meta Name="Viewport" Content="Width=Device-Width, Initial-Scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <Title>Weather App</Title>
+    <!--  to-do Include Location search feature from Google
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyJvPctIaXf6EyRjNkYVyQJi3Jy86EZ5k&libraries=places"></script>
+    -->
+</Head>
+
+<Body >
+    <center>
+        <TABLE style="border: 4px solid;width:400px">
+            <tr><td style="text-align: center;">
+                <section class="inputs">
+                   <input type="text" placeholder="Enter any city…" id="cityinput">
+                   <input class="w3-button w3-gray w3-round-xlarge" type="submit" value="Submit" id="submit">
+                </section>
+            </td></tr>
+
+            <tr><td>
+                <section class="currenttemp">
+                    <table style="border: 1px solid; width: 100%">
+                        <tr><td colspan="2" style="text-align: center;">
+                            <p class="w3-large" id="city"></p>
+                        </td></tr>
+                        <tr><td width="50%" style="text-align: center;"> 
+                                <div class="w3-jumbo" id="currenttemp"></div>
+                            </td>
+                            <td>
+                                <p class="w3-medium" id="todayssky"></p>
+                                <p class="w3-large" id="todayshighlow"></p>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </td></tr>
+            <tr><td>
+                <section class="hourlydata">
+                    <TABLE style="border: 1px solid; width: 100%">
+                        <tr> <td colspan=5 class="w3-small"> HOURLY FORECAST </td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td><p id="hour1"> </p></td>
+                            <td><p id="hour2"> </p></td>
+                            <td><p id="hour3"> </p></td>
+                            <td><p id="hour4"> </p></td>
+                            <td><p id="hour5"> </p></td>
+                        </tr>
+                    </TABLE>
+                </section>
+            </td></tr>
+            <tr><td>
+                <section class="dailydata">
+                    <TABLE style="border: 1px solid;width: 100%">
+                        <tr> <td colspan=3 class="w3-small"> 5 DAY FORECAST </td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td><p id="day0"> </p></td>
+                            <td><span> <img id="img_day0" src=""/> </span></td>
+                            <td><p id="temp_day0"> </p></td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td><p id="day1"> </p></td>
+                            <td><span> <img id="img_day1" src=""/></span></td>
+                            <td><p id="temp_day1"> </p></td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td><p id="day2"> </p></td>
+                            <td><span ><img id="img_day2" src=""/> </span></td>
+                            <td><p id="temp_day2"> </p></td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td><p id="day3"> </p></td>
+                            <td><span> <img id="img_day3" src=""/></span></td>
+                            <td><p id="temp_day3"> </p></td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td><p id="day4"> </p></td>
+                            <td><span><img id="img_day4" src=""/> </span></td>
+                            <td><p id="temp_day4"> </p></td>
+                        </tr>
+                    </TABLE>
+                </section>
+            </td></tr>
+        </Table>
+
+        <section class="footer">
+            <p class="w3-tiny"> icons “Powered by Tomorrow.io” </p>
+        </section>
+
+    </center>
+    <Script Src="tomorrowIO.js"></Script>
+</Body>
+</Html>
